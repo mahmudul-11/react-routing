@@ -7,6 +7,8 @@ import About from './components/Homepage/About/About';
 import NotFound from './components/NoteFound/NotFound';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
+import Friend from './components/Friend/Friend';
+import FriendsDetails from './components/FriendDetails/FriendsDetails';
 
 
 function App() {
@@ -25,6 +27,9 @@ function App() {
           <Route path='/friends'>
             <Friends></Friends>
 
+          </Route>
+          <Route path='/friend/:fId'>
+            <FriendsDetails></FriendsDetails>
           </Route>
           <Route path='/about'>
             <About></About>
