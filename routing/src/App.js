@@ -40,7 +40,7 @@ function App() {
 
           </Route>
 
-          <Route >{/* <Route path='*'></Route> */}
+          <Route path="*">{/* <Route path='*'></Route> */}
             <NotFound></NotFound>
           </Route>
         </Switch>
